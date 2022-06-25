@@ -1,2 +1,2 @@
 # App Restaurante
- Proyecto final para de Disenno Web II
+ Proyecto final para de Diseño Web II
