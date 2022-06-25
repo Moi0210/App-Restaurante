@@ -145,7 +145,7 @@
 
             <%--Tab 6--%>
             <div class="tab-pane fade show " id="pills-unidades" role="tabpanel" aria-labelledby="unidades-tab">
-                <h3>Cajas</h3>
+                <h3>Unidades</h3>
                 <p></p>
                 <table class="table table-hover">
                     <thead class="thead-dark">

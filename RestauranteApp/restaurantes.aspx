@@ -174,7 +174,7 @@
     </div>
 
     <!--Main Navigation-->
-    <header>
+    <header style="margin-bottom: 50px">
         <!-- Sidebar -->
         <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
             <div class="position-sticky">
@@ -197,7 +197,7 @@
 
                     <%--Salida--%>
                     <a href="indexadmin.aspx" class="list-group-item py-4 ripple" style="color: darkred;" aria-selected="true">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i><span>&nbsp;&nbsp;&nbsp;Salir</span></a>
+                        <i class="fa fa-sign-out" aria-hidden="true"></i><span>&nbsp;&nbsp;&nbsp;Atrás</span></a>
                 </div>
             </div>
         </nav>
@@ -253,10 +253,9 @@
                 </div>
             </div>
         </nav>
-        <br>
     </header>
-    <br />
-    <main>
+
+    <main style="position: fixed;">
         <div class="tab-content" id="myTabContent">
             <%--Tab 1--%>
             <div class="tab-pane fade2 show active" id="mesas" role="tabpanel" aria-labelledby="mesas-tab">
@@ -300,12 +299,12 @@
 
                             <%--Tab 2--%>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" style="margin-top: -15px;" aria-labelledby="pills-profile-tab">
-                                <img src="Web/img/layout_restaurante.jpg" style="image-rendering: pixelated;" width="1530"/>
+                                <img src="Web/img/layout_restaurante.jpg" style="image-rendering: pixelated;" width="1530" />
                             </div>
 
                             <%--Tab 3--%>
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel" style="margin-top: -15px;" aria-labelledby="pills-contact-tab">
-                                <img src="Web/img/layout_restaurante.jpg" style="image-rendering: pixelated;" width="1530"/>
+                                <img src="Web/img/layout_restaurante.jpg" style="image-rendering: pixelated;" width="1530" />
                             </div>
                         </div>
                     </div>
