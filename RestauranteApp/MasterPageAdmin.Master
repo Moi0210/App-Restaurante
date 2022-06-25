@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageAdmin.master.cs" Inherits="RestauranteApp.MasterPageAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin Master Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <%--JS--%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./Web/css/styles.css"/>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: -7px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-static-top bg-custom-2 bg-shadow" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="font-family: georgia,garamond,serif; margin-bottom: 2px;">Divella & Giudici</a>
+
+            <%--Boton para interfaz de telefono--%>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <%--Elementos de la barra de navegacion--%>
+            <div class="navbar-collapse collapse" id="navbarsExample03" style="">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.aspx">Inicio</a>
+                    </li>
+
+                    <%--Dropdown--%>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sistema</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="info.aspx">Información</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Reiniciar sesión</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Salir</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Ayuda</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="contactoadmin.aspx">Contacto</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav mb-lg-0">
+                    <li>
+                        <a class="dropdown-item" href="indexadmin.aspx">Atrás</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2022 Divella & Giudici v1.0</p>
+    </div>
+</body>
+</html>
